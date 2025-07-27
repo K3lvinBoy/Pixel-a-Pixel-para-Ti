@@ -3,27 +3,25 @@ body {
     background: #fff8e7;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .sunflower {
     position: relative;
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     margin: 100px auto;
 }
 
 .flower_wrapper {
     position: relative;
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 400px;
 }
 
 .flower_stem {
     position: absolute;
-    width: 9%;
+    width: 18px;
     height: 330px;
-    bottom: -40px;
+    bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
@@ -36,10 +34,10 @@ body {
 
 .flower_center {
     position: absolute;
-    top: 0px;
+    top: 80px;
     left: 50%;
-    width: 67.5%;
-    aspect-ratio: 1 / 1;
+    width: 135px;
+    height: 135px;
     background: radial-gradient(circle at center, #8b4513 40%, #3b2f2f 100%);
     border-radius: 50%;
     transform: translateX(-50%);
@@ -52,8 +50,8 @@ body {
 
 .flower_petal {
     position: absolute;
-    width: 30%;
-    height: 58%;
+    width: 60px;
+    height: 116px;
     background: linear-gradient(to top, #fbcf4a, #f59e0b 60%, #d17f00);
     border-radius: 50% 50% 0 0;
     transform-origin: bottom center;
@@ -62,28 +60,25 @@ body {
     border: 1.5px solid #b8860b;
     opacity: 0;
     pointer-events: none;
-    left: 35%;
-    top: -10%;
 }
 
-.flower_petal-1 { transform: rotate(0deg) translateY(-50%); }
-.flower_petal-2 { transform: rotate(30deg) translateY(-50%); }
-.flower_petal-3 { transform: rotate(60deg) translateY(-50%); }
-.flower_petal-4 { transform: rotate(90deg) translateY(-50%); }
-.flower_petal-5 { transform: rotate(120deg) translateY(-50%); }
-.flower_petal-6 { transform: rotate(150deg) translateY(-50%); }
-.flower_petal-7 { transform: rotate(180deg) translateY(-50%); }
-.flower_petal-8 { transform: rotate(210deg) translateY(-50%); }
-.flower_petal-9 { transform: rotate(240deg) translateY(-50%); }
-.flower_petal-10 { transform: rotate(270deg) translateY(-50%); }
-.flower_petal-11 { transform: rotate(300deg) translateY(-50%); }
-.flower_petal-12 { transform: rotate(330deg) translateY(-50%); }
+.flower_petal-1 { transform: rotate(0deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-2 { transform: rotate(30deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-3 { transform: rotate(60deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-4 { transform: rotate(90deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-5 { transform: rotate(120deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-6 { transform: rotate(150deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-7 { transform: rotate(180deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-8 { transform: rotate(210deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-9 { transform: rotate(240deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-10 { transform: rotate(270deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-11 { transform: rotate(300deg) translateY(-50px); left: 80px; top: -20px; }
+.flower_petal-12 { transform: rotate(330deg) translateY(-50px); left: 80px; top: -20px; }
 
 .flower_leaf {
     position: absolute;
-    width: 30%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #2e7d32, #1b4d22);
     border-radius: 60% 0 60% 0;
     box-shadow: 2px 3px 6px rgba(0,0,0,0.5);
@@ -95,21 +90,21 @@ body {
 }
 
 .flower_leaf-1 {
-    left: 0;
+    left: 26px;
     bottom: 40px;
     transform: rotate(-90deg) scale(1.3);
     filter: drop-shadow(3px 2px 3px rgba(0,0,0,0.4));
 }
 
 .flower_leaf-2 {
-    right: 0;
+    right: 30px;
     bottom: 60px;
     transform: rotate(190deg) scale(1.15);
     filter: drop-shadow(2px 1px 2px rgba(0,0,0,0.3));
 }
 
 #text {
-    font-size: 4vw;
+    font-size: 18px;
     font-weight: bold;
     color: #4b2e2e;
     margin-top: 30px;
@@ -134,5 +129,54 @@ body {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .sunflower {
+    width: 60vw;
+    margin: 50px auto;
+  }
+
+  .flower_wrapper {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .flower_stem {
+    width: 4vw;
+    height: 50vh;
+  }
+
+  .flower_center {
+    width: 28vw;
+    height: 28vw;
+    top: 25px;
+  }
+
+  .flower_petal {
+    width: 14vw;
+    height: 28vw;
+    left: 50%;
+    top: 0;
+  }
+
+  .flower_leaf {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .flower_leaf-1 {
+    left: 10vw;
+    bottom: 15vw;
+  }
+
+  .flower_leaf-2 {
+    right: 10vw;
+    bottom: 20vw;
+  }
+
+  #text {
+    font-size: 4vw;
   }
 }
