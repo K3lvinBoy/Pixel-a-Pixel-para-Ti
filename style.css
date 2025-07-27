@@ -36,7 +36,7 @@ body {
 
 .flower_center {
     position: absolute;
-    top: 20px;
+    top: -50px;
     left: 50%;
     width: 67.5%;
     aspect-ratio: 1 / 1;
