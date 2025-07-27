@@ -20,8 +20,8 @@ body {
 .flower_stem {
     position: absolute;
     width: 18px;
-    height: 330px;
-    bottom: -70px;
+    height: 350px;
+    bottom: -120px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
@@ -34,10 +34,10 @@ body {
 
 .flower_center {
     position: absolute;
-    top: 300px;
+    top: 40px; /* más abajo */
     left: 50%;
-    width: 135px;
-    height: 135px;
+    width: 138px;
+    height: 138px;
     background: radial-gradient(circle at center, #8b4513 40%, #3b2f2f 100%);
     border-radius: 50%;
     transform: translateX(-50%);
@@ -50,8 +50,9 @@ body {
 
 .flower_petal {
     position: absolute;
+    top: 600px;
     width: 60px;
-    height: 116px;
+    height: 119px;
     background: linear-gradient(to top, #fbcf4a, #f59e0b 60%, #d17f00);
     border-radius: 50% 50% 0 0;
     transform-origin: bottom center;
@@ -107,7 +108,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #4b2e2e;
-    margin-top: 30px;
+    margin-top: 150px;
 }
 
 @keyframes growUp {
@@ -132,51 +133,3 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .sunflower {
-    width: 60vw;
-    margin: 50px auto;
-  }
-
-  .flower_wrapper {
-    width: 100%;
-    height: 70vh;
-  }
-
-  .flower_stem {
-    width: 4vw;
-    height: 50vh;
-  }
-
-  .flower_center {
-    width: 28vw;
-    height: 28vw;
-    top: 25px;
-  }
-
-  .flower_petal {
-    width: 14vw;
-    height: 28vw;
-    left: 50%;
-    top: 0;
-  }
-
-  .flower_leaf {
-    width: 16vw;
-    height: 16vw;
-  }
-
-  .flower_leaf-1 {
-    left: 10vw;
-    bottom: 15vw;
-  }
-
-  .flower_leaf-2 {
-    right: 10vw;
-    bottom: 20vw;
-  }
-
-  #text {
-    font-size: 4vw;
-  }
-}
