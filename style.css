@@ -23,7 +23,7 @@ body {
     position: absolute;
     width: 9%;
     height: 330px;
-    bottom: -70px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
@@ -36,7 +36,7 @@ body {
 
 .flower_center {
     position: absolute;
-    top: 31px;
+    top: 20px;
     left: 50%;
     width: 67.5%;
     aspect-ratio: 1 / 1;
