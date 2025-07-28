@@ -32,6 +32,23 @@ body {
     animation: growUp 1.2s ease forwards;
 }
 
+.flower_stem-left {
+    position: absolute;
+    width: 18px;
+    height: 330px;
+    bottom: -100px;
+    left: 30%;
+    background: linear-gradient(180deg, #2e7d32, #1b4d22);
+    border-radius: 5px;
+    border: 2px solid #1b4d22;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+    z-index: 1;
+    opacity: 0;
+    animation: growUp 1.2s ease forwards;
+    transform: rotate(-25deg);
+    animation-delay: 0.2s;
+}
+
 .flower_center {
     position: absolute;
     top: 40px; /* más abajo */
@@ -133,3 +150,35 @@ body {
   }
 }
 
+
+
+.popup-leaf {
+  position: fixed;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 320px;
+  background: linear-gradient(135deg, #2e7d32, #1b4d22);
+  border-radius: 60% 0 60% 0;
+  box-shadow: 2px 3px 16px rgba(0,0,0,0.5);
+  border: 2px solid #1b4d22;
+  opacity: 0;
+  z-index: 100;
+  transition: opacity 0.4s, transform 0.4s;
+  padding: 30px 25px;
+  pointer-events: none;
+}
+
+.popup-leaf.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.popup-leaf-text {
+  color: #fffbe7;
+  font-size: 17px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
