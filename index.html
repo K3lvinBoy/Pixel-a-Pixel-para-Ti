@@ -12,7 +12,8 @@
         <source src="Flores Amarillas2.ogv" type="audio">
 
     </audio>
-	
+    
+  
    
 
     <div class="sunflower">
@@ -59,6 +60,14 @@
     <div class="light light-11"></div>
     <div class="light light-12"></div>
     
+
+  <div id="popup-leaf" class="popup-leaf">
+  <div class="popup-leaf-text">
+    
+    <p>Toma, por lindotaaaaa. Espero que te gusten mucho. </p>
+  </div>
+  </div>
+
     <p id="text">CON CARIÑO PARA TI [...]</p>
 </body>
 <script>
@@ -81,6 +90,15 @@
       });
     }, petalDelay);
   };
+</script>
+
+<script>
+document.querySelector('.sunflower').addEventListener('click', function() {
+  document.getElementById('popup-leaf').classList.add('show');
+  setTimeout(() => {
+    document.getElementById('popup-leaf').classList.remove('show');
+  }, 4000); // Oculta la hoja después de 4 segundos
+});
 </script>
 
 </body>
